@@ -1,0 +1,164 @@
+.first-section h1 {
+    margin-top: 120px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.photoes_link {
+    margin-bottom: 40px;
+}
+
+.fields {
+    text-align: center;
+    font-size: 30px;
+}
+.fields a {
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.users {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.admin_user_info {
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid black;
+    /* border-top: 1px solid black; */
+    /* margin-bottom: 20px; */
+    background-color: white;
+}
+
+.users_list {
+    display: block;
+    list-style: none;
+}
+
+.user_id {
+    padding-right: 20px;
+}
+
+.edit {
+    color: green;
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+}
+
+.del {
+    color: red;
+    position: absolute;
+    right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.for_img {
+    margin-left: 22%;
+}
+
+.for_img img {
+    width: 400px;
+    height: 400px;
+}
+
+
+.comments {
+    list-style: none;
+    font-size: 20px;
+    width: 1000px;
+}
+
+.for_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.for_flex p {
+    width: 20%;
+}
+
+.del_comment {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.del_like {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header {
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.photo_list {
+    list-style: none;
+    position: relative;
+}
+
+.del_photo {
+    /* position: absolute;
+    right: 70px;
+    top: 10px; */
+    text-align: right;
+    margin-right: 100px;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;   
+}
+.photo_list hr {
+    background-color: black;
+    height: 1px;
+    border: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+    .del_photo {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .comments {
+        width: 100%;
+    }
+
+    .for_img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .for_img {
+        margin-left: 0%
+    }
+
+    .for_flex {
+        display: block;
+    }
+    .for_flex p {
+        width: 100%;
+        display: block;
+        /* border: 1px solid red; */
+    }
+    .del_comment {
+        text-align: right;
+    }
+    .del_like {
+        text-align: right;
+    }
+    .like_flex {
+        display: flex;
+    }
+}

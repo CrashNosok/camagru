@@ -1,0 +1,24 @@
+.show_first h1 {
+    font-size: 60px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 40px;
+}
+
+.show_first a {
+    color: black;
+}
+
+.show_center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.show_center img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 500px;
+    /* text-align: center; */
+}

@@ -1,0 +1,363 @@
+body.lock {
+    overflow: hidden;
+}
+
+.popup {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup_content {
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    transition: all 0.5s ease 0s;
+}
+
+.popup_content {
+    background-color: #fff;
+    color: black;
+    max-width: 800px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup_close {
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.popup_title {
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+.pop_container {
+    display: flex;
+}
+.pop_right {
+    width: 450px;
+    position: relative;
+}
+
+.pop_left img {
+    width: 500px;
+    height: 500px;
+}
+
+.pop_name {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.pop_name p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.pop_comments {
+    border-bottom: 1px solid #dddddd;
+    /* height: 350px; */
+    height: 325px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+}
+
+.pop_comments ul {
+    list-style: none;
+}
+
+.comment_name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.coment_text {
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+}
+
+.comment_pubdate {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
+    color: #777777;
+}
+
+#photo_pubdate {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: #777777;
+}
+
+.pop_likes {
+    position: relative;
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#pop_heart {
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+#pop_heart_number {
+    margin-left: 10px;
+    display: inline;
+}
+
+.pop_add_comment {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid #dddddd;
+    width: 100%;
+    height: 50px;
+}
+.pop_add_comment input[type="text"] {
+    border: 0;
+    background: none;
+    display: inline-block;
+    padding-left: 5px;
+    width: 75%;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+.comment_submit {
+    padding-top: 10px;
+    cursor: default;
+    color: #b3e0fc;
+}
+
+/* ---------------popup menu -------------- */
+
+.popup_menu {
+    position: relative;
+    text-align: center;
+}
+
+#popup_check_menu {
+    display: none;
+}
+
+.popup_menu label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 25px;
+}
+
+.popup_main_menu {
+    display: block;
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(75px);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .2s all;
+}
+
+.popup_main_menu p {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+#popup_check_menu:checked ~ .popup_main_menu {
+    max-height: 200px;
+    font-size: 16px;
+}
+
+.pop_share {
+    position: absolute;
+    border-top: 1px solid #dddddd;
+    width: 100%;
+}
+.fa:first-child {
+    margin-left: 5px;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 7px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+  
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-vk {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-odnoklassniki {
+    background: #f59930;
+    color: white;
+}
+
+.color_blue {
+    color: #2a9df7;
+}
+
+.location {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+@media screen and (max-width: 769px) {
+    .pop_container {
+        display: block;
+    }
+
+    .pop_left img {
+        width: 85%;
+        height: 380px;
+        margin-left: 38px;
+    }
+
+    .pop_comments {
+        height: 250px;
+    }
+
+    .popup_menu label {
+        left: 40px;
+    }
+
+    .pop_name p {
+        font-size: 25px;
+    }
+
+    .popup_close {
+        color: black;
+        top: 388px;
+        right: 40px;
+        font-size: 30px;
+    }
+    .pop_add_comment {
+        position: absolute;
+        width: 95%;
+    }
+    .pop_add_comment input[type="text"] {
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+    .comment_name {
+        margin-left: 40px;
+    }
+    .coment_text {
+        margin-left: 50px;
+    }
+    .comment_pubdate {
+        margin-right: 40px;
+    }
+    .pop_likes {
+        position: relative;
+        display: block;
+        padding: 5px;
+        padding-left: 40px;
+        padding-bottom: 60px;
+        padding-top: 5px;
+    }
+    #photo_pubdate {
+        padding-right: 40px;
+    }
+
+    .pop_name .location {
+        font-size: 10px;
+    }
+
+    .comment_name {
+        margin-top: 20px;
+    }
+
+    .comment {
+        margin-bottom: 40px;
+    }
+
+    .pop_share {
+        display: none;
+    }
+}

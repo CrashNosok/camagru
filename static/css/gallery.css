@@ -1,0 +1,171 @@
+body {
+    background: #fafafa;
+}
+
+.wrapper_gallery {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.first_section h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.first_section {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 130px;
+    padding-bottom: 40px;
+}
+
+.g_list {
+    /* все потомки - grid-элементы */
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /* 2 - размер строки, 1fr - единица гипкости. */
+    grid-template-rows: repeat(1, 2fr);
+    /* отступы между элементами */
+    grid-row-gap: 30px;
+    width: 87vw;
+}
+
+.g_list li {
+    list-style: none;
+}
+
+.item_img img {
+    padding: 0px 10px 0px 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.item {
+    display: block;
+    background-color: white;
+    border: 1px solid #dddddd;
+    width: 400px;
+    height: 530px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.user_name {
+    margin: 0;
+    padding: 5px 0px 5px 10px;
+    display: flex;
+}
+
+.user_name img {
+    margin-right: 10px;
+}
+
+.h-link {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.heart {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+.like_on {
+    color: red;
+    background: white;
+    font-size: 25px;
+}
+
+.heart_number {
+    margin-right: 10px;
+}
+
+.comment {
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+.comment_number {
+    margin-left: 10px;
+}
+
+.add_comment {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid #dddddd;
+    width: 100%;
+    height: 40px;
+}
+.add_comment input[type="text"] {
+    border: 0;
+    background: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 7px;
+    width: 75%;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+.comment_sub {
+    padding-top: 10px;
+    cursor: default;
+    color: #b3e0fc;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.item img:hover {
+    cursor: pointer;
+}
+
+.photo_pubdate_info {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: #777777;   
+}
+
+.page_nu {
+    width: 200px;
+}
+
+.page_number_content {
+    display: flex;
+    justify-content: center;
+}
+
+.page_number_content p {
+    font-size: 30px;
+    padding: 0 20px 20px 20px;
+}
+
+.page_number_content a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 769px) {
+    .g_list {
+        grid-template-columns: repeat(1, 2fr);
+    }
+}

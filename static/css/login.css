@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fafafa;
+}
+
+a {
+    color: #2a9df7;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.left {
+    margin-top: 100px;
+}
+.left img {
+    width: 500px;
+    min-height: 700px;
+    margin-right: 50px;
+}
+
+.right {
+    margin-top: 100px;
+}
+
+.login_form {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 300px;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+.box h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    color: black;
+}
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #eeeeee;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    border-color: #babbbb;
+}
+.box input[type="submit"] {
+    cursor: default;
+    border: 0;
+    width: 280px;
+    background-color: #b3e0fc;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 5px 5px;
+    outline: none;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: 0.25s;
+    margin-bottom: 50px;
+}
+.forgot_passwd a {
+    text-decoration: none;
+    color: #757575;
+
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.link:hover {
+    color: #800000;
+    font-size: 35px;
+}
+.blue-color {
+    color: #4646df;
+}
+.register_error {
+    color: red;
+    font-size: 20px;
+}
+.my-link {
+    color: #800000; 
+    font-size:20px
+}
+.my-link2 {
+    color: #279c0a; 
+    font-size:20px
+}
+.palka {
+    font-size: 25px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.register {
+    margin-top: 40px;
+    width: 300px;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    color: #757575;
+    border: 1px solid #dddddd;
+}
+
+.register p {
+    margin-right: 5px;
+    display: inline;
+}
+.register a {
+    display: inline;
+}
+
+.entrance {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    color: #757575;
+    border: 1px solid #dddddd;
+}
+.entrance p {
+    margin-right: 5px;
+    display: inline;
+}
+.entrance a {
+    display: inline;
+}
+
+.register_form {
+    margin-top: 40px;
+}
+
+.p_reg {
+    font-size: 22px;
+    width: 230px;
+    margin: 0 auto;
+    color: #757575;
+    margin-bottom: 50px;
+}
+
+.succsess_box {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    width: 700px;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+.green_color {
+    color: green;
+}
+.red_color {
+    color: red;
+}
+.gray_color {
+    color: #757575;
+}
+
+.main_link {
+    color: black;
+}
+
+@media screen and (max-width: 769px) {
+    .left {
+        display: none;
+    }
+    .right {
+        margin: 0 auto;
+    }
+    .register_form {
+        margin-top: 0;
+    }
+    .succsess_box {
+        margin-top: 0;
+    }
+}

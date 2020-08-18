@@ -1,0 +1,40 @@
+/* -------------------------- footer -------------------------- */
+.footer_wrap {
+    border-top: 1px solid #dddddd;
+    height: 250px;
+}
+
+.footer_content {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.footer_logo {
+    font-size: 80px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.author {
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 769px) {
+    .footer_wrap {
+        height: 200px;
+    }
+    .footer_logo {
+        font-size: 40px;
+    }
+    .author {
+        font-size: 20px;
+    }
+    .footer_content {
+        margin-left: 110px;
+    }
+}
